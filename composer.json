@@ -1,0 +1,34 @@
+{
+    "name": "hybridmind/prevent_double_reg",
+    "type": "phpbb-extension",
+    "description": "Double Account Preventer",
+    "homepage": "https://webocean.info",
+    "version": "1.0.1",
+    "time": "2020-07-06",
+    "keywords": [
+        "phpbb",
+        "extension",
+        "prevent_double_reg"
+    ],
+    "license": "GPL-2.0",
+    "authors": [{
+        "name": "hybridmind",
+        "homepage": "https://webocean.info",
+        "email": "admin@webocean.info",
+        "role": "Web Developer"
+    }],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "extra": {
+        "display-name": "Double Account Preventer",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.0,<3.3.*@dev"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/prevent_double_reg",
+            "filename": "version_check"
+        }
+    }
+}

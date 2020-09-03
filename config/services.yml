@@ -1,0 +1,10 @@
+services:
+  hybridmind.prevent_double_reg.listener:
+    class: hybridmind\prevent_double_reg\event\listener
+    arguments:
+      - '@config'
+      - '@template'
+      - '@user'
+      - '@dbal.conn'
+    tags:
+      - name: event.listener
